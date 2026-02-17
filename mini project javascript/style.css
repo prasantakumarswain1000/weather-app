@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43);
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  width: 95%;
+  max-width: 1100px;
+  padding: 30px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+header input {
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  width: 250px;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+/* Card Style */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  margin-bottom: 25px;
+}
+
+/* Current Weather */
+.current-weather {
+  text-align: center;
+}
+
+.location h2 {
+  font-size: 24px;
+}
+
+.weather-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-main img {
+  width: 90px;
+}
+
+.temperature {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Forecast */
+.forecast h3 {
+  margin-bottom: 15px;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.forecast-card {
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.forecast-card:hover {
+  transform: translateY(-8px);
+}
+
+.forecast-card img {
+  width: 50px;
+}
+
+/* Air Quality */
+.air-quality {
+  text-align: center;
+}
+
+.aqi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.aqi-value {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.aqi-label {
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.good {
+  background: #4caf50;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

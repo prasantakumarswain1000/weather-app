@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Pro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1 id="cityName">Weather Pro</h1>
+      <input id="searchInput" type="text" placeholder="Search city...">
+    </header>
+
+    <!-- Current Weather -->
+    <section class="current-weather card">
+      <div class="location">
+        <h2>New York</h2>
+        <span>United States</span>
+      </div>
+
+      <div class="weather-main">
+        <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="weather-icon">
+        <div class="temperature">24°C</div>
+      </div>
+
+      <div class="description">Sunny</div>
+
+      <div class="details">
+        <div id="humidity">Humidity: 60%</div>
+        <div id="wind">Wind: 12 km/h</div>
+        <div id="pressure">Pressure: 1012 hPa</div>
+      </div>
+    </section>
+
+    <!-- Forecast -->
+    <section class="forecast">
+      <h3>5-Day Forecast</h3>
+      <div class="forecast-grid">
+
+        <div class="forecast-card card">
+          <p>Mon</p>
+          <img src="https://openweathermap.org/img/wn/02d.png">
+          <p>26°C</p>
+        </div>
+
+        <div class="forecast-card card">
+          <p>Tue</p>
+          <img src="https://openweathermap.org/img/wn/03d.png">
+          <p>22°C</p>
+        </div>
+
+        <div class="forecast-card card">
+          <p>Wed</p>
+          <img src="https://openweathermap.org/img/wn/10d.png">
+          <p>18°C</p>
+        </div>
+
+        <div class="forecast-card card">
+          <p>Thu</p>
+          <img src="https://openweathermap.org/img/wn/01d.png">
+          <p>25°C</p>
+        </div>
+
+        <div class="forecast-card card">
+          <p>Fri</p>
+          <img src="https://openweathermap.org/img/wn/04d.png">
+          <p>20°C</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Air Quality -->
+    <section class="air-quality card">
+      <h3>Air Quality</h3>
+      <div class="aqi">
+        <span class="aqi-value">42</span>
+        <span class="aqi-label good">Good</span>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+<script src="script.js"></script>
+</html>
